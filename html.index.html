@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Landing Page</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+
+		h2 {
+			margin-top: 0;
+		}
+
+		.card {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin-bottom: 20px;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+
+		.card:hover {
+			box-shadow: 0 0 10px rgba(0,0,0,0.2);
+		}
+
+		.card img {
+			max-width: 200px;
+			max-height: 200px;
+			object-fit: cover;
+			border-radius: 5px;
+			margin-right: 20px;
+		}
+
+		.card h3 {
+			margin-top: 0;
+		}
+
+		.status-form {
+			margin-top: 20px;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+		}
+
+		.status-form label {
+			margin-right: 10px;
+		}
+
+		.status-form input[type=text] {
+			padding: 5px;
+			font-size: 16px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+		}
+
+		.status-form button {
+			padding: 5px 10px;
+			font-size: 16px;
+			background-color: #333;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+		.status-result {
+			margin-top: 20px;
+		}
+
+		.status-result p {
+			font-size: 16px;
+			margin: 0;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Welcome to ED-HIVE</h1>
+	</header>
+	<div class="container">
+		<h2>Recommended Courses</h2>
+		<div class="card">
+			<img src="course1.jpg" alt="Course 1">
+			<div>
+				<h3>Data Science</h3>
+				<p>Description of  the course </p>
+                <p>Learn complete data science:Machine learning & deep learning using python .</p>
+        <a href="#" class="btn" data-course="Data Science">Enroll Now</a>
+				<a href="#">Learn More</a>
+			</div>
+		</div>
+		<div class="card">
+			<img src="course2.jpg" alt="Course 2">
+			<div>
+				<h3>Web Development</h3>
+				<p>Description of course </p>
+                <p>Learn the basics of HTML,Css and Javascript and how to create  web pages.</p>
+        <a href="#" class="btn" data-course="Web Development">Enroll Now</a>
+				<a href="#">Learn More</a>
+			</div>
+		</div>
+		<h2>My learning</h2>
+		<form class="status-form">
+			<label for="course-id">Course ID:</label>
+			<input type="text" id="course-id" name="course-id" required>
+			<button type="submit">Check Status</button>
+		</form>
+		<div class="My Learning">
+			<p id="status
